@@ -10,7 +10,7 @@ const authentication = async function (req, res, next) {
         next();
     }
     catch (error) {
-        console.log(error)
+        console.log(error + 'test')
         return res.status(500).send({ msg: error.message })
     }
 }
